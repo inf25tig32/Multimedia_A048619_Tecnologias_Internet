@@ -36,7 +36,7 @@ O resultado final manteve-se altamente fiel ao planeamento inicial. A paleta de 
 A FimbyMia é uma plataforma web estática de apresentação de serviços fotográficos. Destaca-se por uma interface minimalista e interativa, possuindo um carregamento dinâmico de pacotes de preços através de XML e uma "Área de Cliente" simulada para visualização de galerias privadas.
 
 ### Ligação para o site no Netlify
-🌐 **[Inserir aqui o teu link, ex: https://valerphotos-projeto.netlify.app]**
+🌐 **[[Inserir aqui o teu link, ex: https://valerphotos-projeto.netlify.app](https://inf25tig32.netlify.app/)]**
 
 
 ### Regras de Utilização
