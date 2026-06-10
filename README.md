@@ -48,13 +48,10 @@ A página `contactos.html` utiliza os mecanismos nativos do HTML5 para validaç�
 * Atributo `type="date"` disponibiliza um calendário nativo (Datepicker) para evitar erros de formatação de datas.
 
 ### Validação do HTML e CSS
-Todo o código fonte foi testado recorrendo aos validadores oficiais do W3C. Não foram encontrados erros de sintaxe ou estrutura no HTML e o CSS passou na totalidade no validador de CSS nível 3.
+Todo o código fonte foi testado recorrendo aos validadores oficiais do W3C.
 * **Validador HTML:** https://validator.w3.org/
 * **Validador CSS:** https://jigsaw.w3.org/css-validator/
 
-*(Insere aqui as capturas de ecrã das faixas verdes do W3C que geraste anteriormente)*
-![Validação HTML](link_para_print_w3c_html.png)
-![Validação CSS](link_para_print_w3c_css.png)
 
 ### Detalhes de Implementação (Cumprimento dos Requisitos Mínimos)
 O projeto cumpriu e ultrapassou os requisitos exigidos:
@@ -66,6 +63,5 @@ O projeto cumpriu e ultrapassou os requisitos exigidos:
 6. **Formulário Complexo:** Uso de `<fieldset>`, `<legend>`, botões `<radio>` e `<select>`.
 7. **Integração CSS3:** Uso de *Media Queries* (Mobile First), formatações avançadas de listas, pseudo-classes (`:hover`, `:checked`), seletor combinador (`~`) no menu overlay, flutuação e posicionamento combinados (`float` + `position: relative` no `<aside>`) e imagens de fundo para caixas HTML.
 8. **Valorização Extra (JavaScript e Multimédia):**
-    * Uso da tag `<video>` (`sobre.html`).
     * Leitura assíncrona (`XMLHttpRequest`) do `pacotes.xml` transformando dados em linhas para a Tabela HTML.
     * Sistema de Login simulado usando JavaScript para manipular o DOM (esconder/mostrar div da galeria e alterar texto).
