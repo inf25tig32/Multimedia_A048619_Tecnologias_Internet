@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pacotes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pacotes.xsd">
+    <pacote>
+        <nome>Elopement / Intimate</nome>
+        <horas>4 Hours</horas>
+        <preco>€1,200</preco>
+        <entregaveis>300+ edited photos, Online Gallery</entregaveis>
+    </pacote>
+    <pacote>
+        <nome>The Full Story</nome>
+        <horas>8 Hours</horas>
+        <preco>€2,500</preco>
+        <entregaveis>600+ edited photos, 1 videography, 200 Kodak Gold</entregaveis>
+    </pacote>
+    <pacote>
+        <nome>Couple Session</nome>
+        <horas>2 Hours</horas>
+        <preco>€70</preco>
+        <entregaveis>32 edited photos, Kodak Gold/Black and White</entregaveis>
+    </pacote>
+    <pacote>
+        <nome>Family Session</nome>
+        <horas>3 Hours</horas>
+        <preco>€280</preco>
+        <entregaveis>30 edited photos, Kodak Gold/Black and White</entregaveis>
+    </pacote>
+
+</pacotes>

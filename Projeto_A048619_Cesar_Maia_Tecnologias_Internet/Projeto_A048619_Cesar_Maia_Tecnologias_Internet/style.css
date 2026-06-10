@@ -1,0 +1,641 @@
+/* =======================================================
+   1. BASE - MOBILE FIRST (Cores e Tipografia Valerphotos)
+======================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaddcb; /* Cor bege areia do fundo */
+    color: #333333;
+    /* Fontes com serifa dão o aspeto elegante de revista */
+    font-family: "Georgia", "Times New Roman", serif; 
+    line-height: 1.6;
+}
+
+/* Tipografia de Títulos */
+h1, h2, h3 {
+    color: #7a1f1e; /* Bordeaux/Vinho do título VALERPHOTOS */
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.subtitle, em {
+    color: #7a1f1e;
+    font-style: italic;
+    font-family: "Brush Script MT", cursive, serif; /* Tenta imitar a letra manuscrita */
+    font-size: 1.2em;
+}
+
+/* Imagens Responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajuste para a Caixa de Login da Área de Cliente */
+#login-box {
+    max-width: 350px;       /* Define uma largura máxima elegante */
+    margin: 0 auto;         /* Centra a caixa no ecrã */
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(122, 31, 30, 0.2);
+}
+
+/* Garante que os inputs específicos de login ficam bem formatados */
+#form-login input[type="text"],
+#form-login input[type="password"] {
+    width: 100%;            /* Ocupa os 350px da caixa, não o ecrã inteiro */
+    text-align: center;     /* Centra o texto digitado */
+    border-bottom: 1px solid #7a1f1e;
+}
+/* =======================================================
+   ESTRUTURA E NAVEGAÇÃO
+======================================================= */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(122, 31, 30, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav a:hover, nav a.active {
+    color: #7a1f1e;
+    border-bottom: 1px solid #7a1f1e;
+}
+
+/* =======================================================
+   SECÇÕES DA PÁGINA
+======================================================= */
+/* O Hero é a grande imagem de fundo com texto por cima */
+#hero {
+    background-color: #333; 
+    background-image: url('fotos_casal1/000047.JPG');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    color: white; /* Força o branco no título sobre a imagem */
+    letter-spacing: 2px;
+}
+
+#preview-about {
+    padding: 40px 20px;
+}
+
+#preview-about article {
+    margin-bottom: 30px;
+}
+
+.link-destaque {
+    display: inline-block;
+    margin-top: 15px;
+    color: #7a1f1e;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#featured-gallery {
+    padding: 40px 20px;
+    background-color: #e5d8c5; /* Um bege para destacar */
+}
+
+.magazines {
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    color: #7a1f1e;
+    margin-bottom: 30px;
+}
+
+.galeria-grid figure {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+footer address a {
+    color: #7a1f1e;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    #preview-about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10%;
+    }
+
+    #preview-about article {
+        width: 50%;
+        padding-right: 40px;
+        text-align: left;
+    }
+
+    #preview-about article h2 {
+        text-align: left;
+    }
+
+    #preview-about figure {
+        width: 45%;
+    }
+
+    .galeria-grid {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .galeria-grid figure {
+        width: 48%;
+    }
+}
+
+
+
+/* =======================================================
+   MENU INTERATIVO 
+======================================================= */
+/* 1. Esconde a checkbox de controlo */
+.menu-checkbox {
+    display: none;
+}
+
+/* 2. Estilo do botão oval (View / Close The Menu) */
+.btn-oval {
+    display: inline-block;
+    border: 1px solid #7a1f1e;
+    border-radius: 40px; /* Cria o aspeto oval perfeito */
+    padding: 8px 25px;
+    color: #7a1f1e;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-oval:hover {
+    background-color: #7a1f1e;
+    color: #eaddcb;
+}
+
+/* Cabeçalho principal ajustado para o botão ficar à direita */
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.cabecalho-principal h1 {
+    margin: 0;
+}
+
+/* 3. O Ecrã do Menu (Overlay) - Escondido por defeito */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaddcb; 
+    background-image: url('cr-3.jpg'); /* A tua textura de papel */
+    background-size: cover;
+    z-index: 9999;
+    
+    /* Estado inicial: invisível e ligeiramente descido */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 30px 5%;
+}
+
+/* 4. A MAGIA: Quando a checkbox está checked, o menu aparece! */
+.menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu-header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* 5. Layout do Conteúdo do Menu (Mobile First) */
+.menu-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-coluna {
+    text-align: center;
+}
+
+.menu-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-coluna li {
+    margin-bottom: 15px;
+}
+
+.menu-coluna a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.menu-coluna a:hover {
+    color: #7a1f1e;
+}
+
+.menu-subtitle {
+    font-family: "Brush Script MT", cursive, serif;
+    color: #7a1f1e;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* =======================================================
+   CORREÇÃO DO MENU OVERLAY (IMAGEM E ALINHAMENTO)
+======================================================= */
+.menu-imagem-central {
+    width: 250px;             /* Define uma largura fixa ideal para o menu */
+    margin: 0 auto;           /* Centra o bloco horizontalmente */
+    display: flex;
+    flex-direction: column;   /* Garante que a foto fica em cima e o título em baixo */
+    align-items: center;      /* Centra os elementos na vertical */
+    gap: 15px;                /* Cria um espaçamento elegante entre a foto e o texto */
+}
+
+.menu-imagem-central img {
+    width: 100%;              /* Ocupa os 250px do container */
+    height: 300px;            /* Define uma altura fixa para a imagem */
+    object-fit: cover;        /* Recorta a imagem perfeitamente sem a distorcer */
+    border-radius: 4px;       /* Um toque suave nos cantos da fotografia */
+    display: block;
+}
+
+.menu-logo-sobreposto {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: #333;              /* Ajusta a cor para garantir leitura */
+    margin: 0;                /* Remove margens extra que possam empurrar o layout */
+    text-align: center;
+}
+
+/* 6. Media Queries para Ecrãs Grandes (Tablets e PCs) */
+@media (min-width: 768px) {
+    .menu-content {
+        flex-direction: row; /* Coloca as 3 secções lado a lado */
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .menu-imagem-central {
+        max-width: 400px;
+    }
+    
+    .menu-logo-sobreposto {
+        font-size: 3em;
+    }
+}
+
+
+/* =======================================================
+   PÁGINA SOBRE (BEHIND THE LENS)
+======================================================= */
+.container-sobre {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Limpa as flutuações (Clearfix) */
+}
+
+.historia-katha {
+    margin-bottom: 40px;
+}
+
+/* Requisito: Formatação da tag MARK (Destaque) */
+mark {
+    background-color: #7a1f1e;
+    color: #eaddcb;
+    padding: 2px 5px;
+    font-style: italic;
+}
+
+/* Requisito de Ponto Extra: Vídeo */
+.video-container {
+    margin: 40px 0;
+    border: 5px solid #fff;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-container figcaption {
+    text-align: center;
+    font-size: 0.85em;
+    padding: 10px;
+    color: #555;
+    font-style: italic;
+}
+
+/* =======================================================
+   REQUISITO: FLUTUAÇÃO E POSICIONAMENTO COMBINADOS
+======================================================= */
+.equipamento {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #7a1f1e;
+    padding: 20px;
+    
+    /* Combinação exigida: */
+    float: right;               
+    position: relative;         
+    top: -20px;                 
+    
+    width: 100%;                
+    margin-top: 30px;
+}
+
+/* Requisito: Estilizar uma Lista (Aninhada) */
+.equipamento ol {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: "Georgia", serif;
+}
+
+.equipamento ul {
+    list-style-type: square; /* Muda a bolinha para um quadrado na sub-lista */
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #7a1f1e;
+}
+
+
+@media (min-width: 768px) {
+    .historia-katha {
+        float: left;
+        width: 60%;
+    }
+
+    .equipamento {
+        width: 35%;
+        margin-top: 0;
+        top: 20px; 
+    }
+}
+
+
+
+/* =======================================================
+   PÁGINA DE SERVIÇOS E TABELA
+======================================================= */
+.container-servicos {
+    padding: 40px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.investment-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.download-section {
+    margin-top: 30px;
+}
+
+/* Requisito: Formatação complexa de Tabela */
+.tabela-precos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "Georgia", serif;
+}
+
+.tabela-titulo {
+    background-color: #7a1f1e;
+    color: #eaddcb;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.tabela-precos th, .tabela-precos td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid rgba(122, 31, 30, 0.2);
+}
+
+.tabela-precos thead th {
+    background-color: rgba(122, 31, 30, 0.1);
+    color: #7a1f1e;
+    font-style: italic;
+}
+
+.tabela-precos tfoot td {
+    font-size: 0.85em;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.td-destaque {
+    background-color: rgba(122, 31, 30, 0.05);
+    text-align: center !important;
+}
+
+/* Área do Javascript */
+.aviso-js {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border: 1px dashed #7a1f1e;
+    margin-bottom: 20px;
+}
+
+.linha-xml {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; background-color: #eaddcb; }
+    to { opacity: 1; background-color: transparent; }
+}
+
+/* Responsividade da Tabela para Telemóveis */
+@media (max-width: 600px) {
+    .tabela-precos th, .tabela-precos td {
+        padding: 10px 5px;
+        font-size: 0.9em;
+    }
+}
+
+/* =======================================================
+   PÁGINA DE CONTACTOS E FORMULÁRIO "PREMIUM"
+======================================================= */
+.container-contactos {
+    padding: 40px 5%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.morada-destaque {
+    margin-top: 20px;
+    font-style: italic;
+    color: #7a1f1e;
+    font-size: 1.1em;
+}
+
+.morada-destaque a {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Estilos Minimalistas do Formulário */
+.form-valer fieldset {
+    border: none;
+    border-top: 1px solid rgba(122, 31, 30, 0.3);
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.form-valer legend {
+    font-family: "Brush Script MT", cursive, serif;
+    font-size: 1.5em;
+    color: #7a1f1e;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.form-grupo {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Inputs sem borda à volta, apenas uma linha no fundo */
+.form-valer input[type="text"],
+.form-valer input[type="email"],
+.form-valer input[type="date"],
+.form-valer select,
+.form-valer textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+    font-family: "Georgia", serif;
+    font-size: 1.1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-valer textarea {
+    resize: vertical;
+}
+
+/* Efeito ao clicar no campo (Focus) */
+.form-valer input:focus,
+.form-valer select:focus,
+.form-valer textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #7a1f1e;
+}
+
+.opcoes-radio {
+    margin-top: 10px;
+}
+
+.opcoes-radio input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.opcoes-radio label {
+    text-transform: none; /* Retira o uppercase nas opções para ler melhor */
+    font-size: 1.1em;
+    color: #333;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-submit {
+    background-color: transparent;
+    font-size: 1.1em;
+    padding: 12px 40px;
+}
+
+.btn-submit:hover {
+    background-color: #7a1f1e;
+    color: #eaddcb;
+}
