@@ -1,4 +1,4 @@
-# Relatório do Projeto: ValerPhotos - Portefólio Multimédia
+# Relatório do Projeto: FilmbyMia - Portfólio Multimédia
 
 ## 1. Project Presentation – Apresentação do projeto
 O projeto **FilmbyMia** consiste no desenvolvimento de um website estático focado na área temática de "Multimédia", especificamente um portfólio para fotografia de casamentos e *sessões em casal* com uma estética cinemática, nostálgica e analógica.
