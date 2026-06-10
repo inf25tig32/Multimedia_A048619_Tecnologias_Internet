@@ -17,18 +17,10 @@ A navegação do site está dividida em 4 páginas principais, acessíveis atrav
 3. **Investment (`servicos.html`):** Tabela de preços dinâmicos carregados via XML e opção de download de dados.
 4. **Inquire (`contactos.html`):** Formulário completo para marcações e detalhes de contacto.
 
-### Estudo da Interface (Wireframes)
-*(Insere aqui as imagens dos teus rascunhos em papel ou wireframes feitos no Figma/Balsamiq)*
-![Wireframe Homepage](link_para_a_tua_imagem_wireframe.png)
-
 ### Resultado Final vs Estudo Inicial
 O resultado final manteve-se altamente fiel ao planeamento inicial. A paleta de cores foca-se em tons quentes (bege `#eaddcb` e vermelho bordeaux `#7a1f1e`), e o uso de tipografia com serif garante o aspeto clássico de "revista de moda".
 
-*(Insere aqui 2 ou 3 capturas de ecrã do site final)*
-![Screenshot Homepage Final](link_para_a_tua_imagem_final1.png)
-![Screenshot Menu Final](link_para_a_tua_imagem_final2.png)
 
----
 
 ## 3. Product - Produto
 
