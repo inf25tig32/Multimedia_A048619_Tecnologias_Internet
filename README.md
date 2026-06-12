@@ -1,7 +1,7 @@
-# Relatório do Projeto: FilmbyMia - Portfólio Multimédia
+# Relatório do Projeto: inf25tig32 - Portfólio Multimédia
 
 ## 1. Project Presentation – Apresentação do projeto
-O projeto **FilmbyMia** consiste no desenvolvimento de um website estático focado na área temática de "Multimédia", especificamente um portfólio para fotografia de casamentos e *sessões em casal* com uma estética cinemática, nostálgica e analógica.
+O projeto **inf25tig32** consiste no desenvolvimento de um website estático focado na área temática de "Multimédia", especificamente um portfólio para fotografia de casamentos e *sessões em casal* com uma estética cinemática, nostálgica e analógica.
 
 **Proposta de Trabalho:**
 O objetivo principal foi criar uma experiência web de 4 páginas estruturadas com HTML5 semântico, estilizadas com CSS3 e com interatividade garantida através de JavaScript no lado do cliente. O projeto visa demonstrar a aplicação prática de marcação semântica, leitura assíncrona de ficheiros XML (validados por XSD) e validação estrita segundo as normas do W3C.
@@ -25,7 +25,7 @@ O resultado final manteve-se altamente fiel ao planeamento inicial. A paleta de 
 ## 3. Product - Produto
 
 ### Descrição do Produto
-A FimbyMia é uma plataforma web estática de apresentação de serviços fotográficos. Destaca-se por uma interface minimalista e interativa, possuindo um carregamento dinâmico de pacotes de preços através de XML e uma "Área de Cliente" simulada para visualização de galerias privadas.
+A inf25tig32 é uma plataforma web estática de apresentação de serviços fotográficos. Destaca-se por uma interface minimalista e interativa, possuindo um carregamento dinâmico de pacotes de preços através de XML e uma "Área de Cliente" simulada para visualização de galerias privadas.
 
 ### Ligação para o site no Netlify
 🌐 **https://inf25tig32.netlify.app/**
