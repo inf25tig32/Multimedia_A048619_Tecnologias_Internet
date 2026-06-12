@@ -1,4 +1,4 @@
-# Relatório do Projeto: inf25tig32 - Projeto Multimédia
+# Relatório do Projeto: inf25tig32 - Projeto
 
 ## 1. Apresentação do projeto
 O projeto **inf25tig32** consiste no desenvolvimento de um website estático focado na área temática de "Multimédia", especificamente um portfólio para fotografia de casamentos e *sessões em casal* com uma estética cinemática, nostálgica e analógica.
