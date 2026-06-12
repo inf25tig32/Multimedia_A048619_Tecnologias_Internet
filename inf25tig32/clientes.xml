@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <username>ruben</username>
+        <password>ruben123</password>
+        <pasta>Sessão de Rúben e Mafalda</pasta>
+        <fotos>
+            <foto>fotos_casal1/mafalda2.jpeg</foto>
+            <foto>fotos_casal1/mafalda3.jpeg</foto>
+            <foto>fotos_casal1/mafalda4.jpeg</foto>
+            <foto>fotos_casal1/mafalda5.jpeg</foto>
+            <foto>fotos_casal1/mafalda.jpeg</foto>
+            <foto>fotos_casal1/mafalda7.jpeg</foto>
+        </fotos>
+    </cliente>
+    <cliente>
+        <username>kiko</username>
+        <password>kiko123</password>
+        <pasta>Sessão de Casal</pasta>
+        <fotos>
+            <foto>fotos_casal1/000040.jpg</foto>
+            <foto>fotos_casal1/000043.jpg</foto>
+            <foto>fotos_casal1/000044.jpg</foto>
+            <foto>fotos_casal1/000045.jpg</foto>
+            <foto>fotos_casal1/000050.jpg</foto>
+            <foto>fotos_casal1/000061.jpg</foto>
+        </fotos>
+    </cliente>
+</clientes>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inf25tig32</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+        function verificarLogin() {
+            var userInserido = document.getElementById('user').value;
+            var passInserida = document.getElementById('pass').value;
+            var erroMsg = document.getElementById('erro-mensagem');
+
+            // Chamada AJAX clássica baseada nos exemplos lecionados
+            var oXHR = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+            
+            oXHR.onreadystatechange = function() {
+                if (oXHR.readyState == 4) {
+                    processarAutenticacao(this.responseXML, userInserido, passInserida, erroMsg);
+                }
+            };
+            
+            oXHR.open("GET", "clientes.xml", true);
+            oXHR.send();
+
+            return false; // Evita o refresh automático da página ao submeter o formulário
+        }
+
+        function processarAutenticacao(xml, user, pass, erroNode) {
+            var listaClientes = xml.getElementsByTagName('cliente');
+            var loginSucesso = false;
+
+            for (var i = 0; i < listaClientes.length; i++) {
+                var xmlUser = listaClientes[i].getElementsByTagName('username')[0].childNodes[0].nodeValue;
+                var xmlPass = listaClientes[i].getElementsByTagName('password')[0].childNodes[0].nodeValue;
+
+                // Se coincidir com a "base de dados" XML
+                if (xmlUser === user && xmlPass === pass) {
+                    loginSucesso = true;
+                    erroNode.style.display = 'none';
+
+                    // 1. Alterar o conteúdo de um elemento (Nome do álbum)
+                    var pastaNome = listaClientes[i].getElementsByTagName('pasta')[0].childNodes[0].nodeValue;
+                    document.getElementById('nome-album').innerText = "Album: " + pastaNome;
+
+                    // 2. Extrair e injetar as fotos do cliente no HTML
+                    var xmlFotos = listaClientes[i].getElementsByTagName('foto');
+                    var containerFotos = document.getElementById('fotos-cliente');
+                    containerFotos.innerHTML = ''; // Limpa vestígios anteriores
+
+                    for (var j = 0; j < xmlFotos.length; j++) {
+                        var urlFoto = xmlFotos[j].childNodes[0].nodeValue;
+                        
+                        // Criação dinâmica de elementos com JavaScript (exigido na valorização)
+                        var figure = document.createElement('figure');
+                        var img = document.createElement('img');
+                        img.src = urlFoto;
+                        img.alt = "Fotografia Privada do Cliente";
+                        
+                        figure.appendChild(img);
+                        containerFotos.appendChild(figure);
+                    }
+
+                    // 3. Alteração da apresentação (Esconder a caixa de login e apresentar a galeria)
+                    document.getElementById('login-box').style.display = 'none';
+                    document.getElementById('galeria-privada').style.display = 'block';
+                    break;
+                }
+            }
+
+            if (!loginSucesso) {
+                erroNode.style.display = 'block'; // Mostra mensagem de erro
+            }
+        }
+
+        // Função simples para fazer Logout e voltar a mostrar o ecrã de Login
+        function logoutClient() {
+            document.getElementById('user').value = '';
+            document.getElementById('pass').value = '';
+            document.getElementById('login-box').style.display = 'block';
+            document.getElementById('galeria-privada').style.display = 'none';
+        }
+    </script>
+
+<body>
+
+    <header>
+        <h1>Inf25tig32</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="sobre.html">Behind the lens</a></li>
+                <li><a href="servicos.html">Service</a></li>
+                <li><a href="contactos.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <p><em>Romantic Documentary Photography</em></p>
+                <h2>Life as it is, gently</h2>
+                <p><small>CINEMATIC, NOSTALGIC STORYTELLING FOR THE MODERN ROMANTIC.</small></p>
+            </div>
+        </section>
+
+        <div id="preview-about">
+            <article>
+                <p class="subtitle"><em>Meet your photographer Mia</em></p>
+                <h2>THE QUIET EYE BEHIND THE LENS</h2>
+                <p><strong>DOCUMENTING LOVE ON ANALOGIC</strong></p>
+                <p>Hi, I'm Mia! I photograph love the way it feels and the way that should be expressed. My work is rooted in nostalgia, movement, and storytelling, contemplating the usage of film to create memories for my clients.</p>
+                <a href="sobre.html" class="link-destaque">Learn more about me here</a>
+            </article>
+            <figure class="foto-sobre">
+                <img src="mia_biod.jpg">
+            </figure>
+        </div>
+
+<section id="area-cliente">
+            <p class="subtitle" style="text-align: center;"><em></em></p>
+            <h2>ACCESS YOUR PRIVATE GALLERY</h2>
+            
+            <div id="login-box">
+                <form id="form-login" onsubmit="return verificarLogin();">
+                    <fieldset style="border: none;">
+                        <div class="form-grupo">
+                            <label for="user">Username</label>
+                            <input type="text" id="user" required placeholder="e.g. cesar">
+                        </div>
+                        <div class="form-grupo">
+                            <label for="pass">Password</label>
+                            <input type="password" id="pass" required placeholder="••••••••">
+                        </div>
+                        <p id="erro-mensagem" style="color: #7a1f1e; display: none; text-align: center; font-style: italic; margin-bottom: 15px;">
+                            Username or Password not valid. Try again.
+                        </p>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn-oval">View Gallery</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="galeria-privada" style="display: none; padding: 20px 0;">
+                <h3 id="nome-album" style="text-align: center; margin-bottom: 30px; color: #7a1f1e;"></h3>
+                <div class="galeria-grid" id="fotos-cliente">
+                    </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <button onclick="logoutClient();" class="btn-oval">Exit Gallery</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>BASED IN PORTUGAL</p>
+        <address>
+            <a href="mailto:filmbymia@gmail.com">filmbymia@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

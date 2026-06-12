@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inf25tig32 | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <div class="menu-overlay">
+        <div class="menu-header">
+            <label for="menu-toggle" class="btn-oval">Close</label>
+        </div>
+        <div class="menu-content">
+            <nav class="menu-coluna">
+                <p class="menu-subtitle">Contact</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/filmbymia._/" target="_blank">I. Instagram</a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank">II. Pinterest</a></li>
+                     <li><a href="https://www.youtube.com/@miafreitasbessa" " target="_blank">III. Youtube</a></li>
+
+                </ul>
+            </nav>
+            <figure class="menu-imagem-central">
+                <img src="mia_landscape.jpg" alt="mia_landscape">
+                <h2 class="menu-logo-sobreposto" href="index.html">Inf25tig32</h2>
+            </figure>
+            <nav class="menu-coluna">
+                <p class="menu-subtitle">Content</p>
+                <ul>
+                    <li><a href="index.html">I. Homepage</a></li><br>
+                    <li><a href="sobre.html">II. Behind the lens</a></li>
+                    <li><a href="servicos.html">III. Info e Services</a></li>
+                    <li><a href="contactos.html">IV. Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <header class="cabecalho-principal">
+        <h1 class="logo"><a href="index.html">FilmbyMia</a></h1>
+        <label for="menu-toggle" class="btn-oval">View The Menu</label>
+    </header>
+
+    <main class="container-contactos">
+        
+        <section class="contact-intro">
+            <p class="subtitle"></p>
+            <h2>TELL ME YOUR STORY</h2>
+            <p>I take on a limited number of weddings/photo session each year to ensure every couple gets my full creative energy. Fill out the form below, and let's create something beautiful.</p>
+            
+            <address class="morada-destaque">
+                Based in Portugal<br>
+                Available Worldwide.<br>
+                Email: <a href="mailto:filmbymia@gmail.com">filmbymia@gmail.com</a>
+            </address>
+        </section>
+
+        <section class="formulario-section">
+            <form action="mailto:filmbymia@gmail.com" method="post" enctype="text/plain" class="form-valer">
+                
+                <fieldset>
+                    <legend>The Basics</legend>
+                    
+                    <div class="form-grupo">
+                        <label for="nome1">Your Name</label>
+                        <input type="text" id="nome1" name="Nome_Noivo1" placeholder="e.g. Jane" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="nome2">Partner's Name</label>
+                        <input type="text" id="nome2" name="Nome_Noivo2" placeholder="e.g. John" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="Email" placeholder="jane@example.com" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>The Event</legend>
+
+                    <div class="form-grupo">
+                        <label for="data">Date of Event</label>
+                        <input type="date" id="data" name="Data_Evento">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label>What are you inquiring about?</label>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="elopement" name="Tipo_Sessao" value="Elopement" checked>
+                            <label for="elopement">Elopement / Intimate</label><br>
+                            
+                            <input type="radio" id="wedding" name="Tipo_Sessao" value="Full Wedding">
+                            <label for="wedding">Full Wedding Celebration</label><br>
+                            
+                            <input type="radio" id="engagement" name="Tipo_Sessao" value="Engagement">
+                            <label for="engagement">Engagement Session</label><br>
+
+                            <input type="radio" id="couple session" name="Tipo_Sessao" value="couple_session">
+                            <label for="engagement">Couple Session</label><br>
+
+                            <input type="radio" id="family sesison" name="Tipo_Sessao" value="family_session">
+                            <label for="engagement">Family Session</label><br>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="origem">How did you find me?</label>
+                        <select id="origem" name="Como_Conheceu">
+                            <option value="Instagram">Instagram</option>
+                            <option value="Pinterest">Pinterest</option>
+                            <option value="Google">Google Search</option>
+                            <option value="Friend">Recommended by a friend</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensagem">Tell me about your vision for the day</label>
+                        <textarea id="mensagem" name="Mensagem" rows="5" placeholder="Where is it? What's the vibe? Tell me everything..." required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn-oval btn-submit">Send Inquiry</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>BASED IN PORTUGAL</p>
+    </footer>
+
+</body>
+</html>
