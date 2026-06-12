@@ -1,6 +1,6 @@
-# Relatório do Projeto: inf25tig32 - Portfólio Multimédia
+# Relatório do Projeto: inf25tig32 - Projeto Multimédia
 
-## 1. Project Presentation – Apresentação do projeto
+## 1. Apresentação do projeto
 O projeto **inf25tig32** consiste no desenvolvimento de um website estático focado na área temática de "Multimédia", especificamente um portfólio para fotografia de casamentos e *sessões em casal* com uma estética cinemática, nostálgica e analógica.
 
 **Proposta de Trabalho:**
@@ -12,10 +12,10 @@ O objetivo principal foi criar uma experiência web de 4 páginas estruturadas c
 
 ### Sitemap (Mapa do Site)
 A navegação do site está dividida em 4 páginas principais, acessíveis através de um menu *overlay* de ecrã inteiro:
-1. **Homepage (`index.html`):** Introdução, Hero Image, Área de Cliente (Login simulado) e destaques.
+1. **Homepage (`index.html`):** Introdução, Área de Cliente (Login simulado) e destaques.
 2. **Behind the Lens (`sobre.html`):** História da fotógrafa, vídeo de bastidores e lista de equipamentos.
-3. **Investment (`servicos.html`):** Tabela de preços dinâmicos carregados via XML e opção de download de dados.
-4. **Inquire (`contactos.html`):** Formulário completo para marcações e detalhes de contacto.
+3. **Info & Services (`servicos.html`):** Tabela de preços dinâmicos carregados via XML e opção de download de dados.
+4. **Contact (`contactos.html`):** Formulário completo para marcações e detalhes de contacto.
 
 ### Resultado Final vs Estudo Inicial
 O resultado final manteve-se altamente fiel ao planeamento inicial. A paleta de cores foca-se em tons quentes (bege `#eaddcb` e vermelho bordeaux `#7a1f1e`), e o uso de tipografia com serif garante o aspeto clássico de "revista de moda".
